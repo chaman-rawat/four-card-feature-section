@@ -30,7 +30,7 @@ body {
     margin: 0;
     padding: 0;
     border: none;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 h1, h2 {
@@ -41,7 +41,7 @@ h1, h2 {
 
 h1 { font-size: 1.6rem; }
 
-h2 { font-size: 1.35rem; margin-bottom: 0.1em; }
+h2 { font-size: 1.3rem; margin-bottom: 0.2em; line-height: 1.7;}
 
 p {
     margin-top: 0;
@@ -51,17 +51,12 @@ p {
 
 img { max-width: 100%; }
 
-
-.container {
-    width: min(80%,900px);
-    margin-inline: auto;
-}
-
-
 /* Elements Styling */
 header {
     text-align: center;
-    margin-block: 5em;
+    margin: 5rem auto;
+    width: min(80%,500px);
+
 }
 
 main {
@@ -69,22 +64,63 @@ main {
     margin: 0 auto 5rem;
 }
 
+main .container {
+    width: min(82%,1200px);
+    margin-inline: auto;
+}
+
 section {
     max-width: 325px;
-    padding: 0 2rem;
-    margin: 0 auto 2rem;
-    box-shadow: 0 10px 25px 0px var(--clr-ntrl-GrayishBlue);
-    border-radius: 10px;
+    padding: 0.5rem 2rem 0.5rem 1.6rem;
+    margin: 0 auto 1.6rem;
+    box-shadow: 0 10px 25px 0 hsla(229, 6%, 66%, 0.6);
+    border-radius: 5px;
     border-top: 4px solid var(--border);
     overflow: auto;
 }
-
 section p {
     font-size: 0.85rem;
+    letter-spacing: 0.009em;
+
 }
 
 section img {
-    margin-block: 1rem 2rem;
+    margin-block: 1.3rem;
     float: right;
     width: 23%;
+}
+
+@media  (min-width : 800px){
+    /* header {margin-block: 5rem;} */
+    h1 {
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+    }
+
+    header { margin: 5rem auto 4rem }
+    header p {font-size: 14px;}
+
+    main .container {
+        max-width: fit-content;
+        display: grid;
+        grid-template-areas:". u ."
+                            "l u r"
+                            "l d r"
+                            ". d .";
+                            gap: 2rem;
+                        }
+    main section {
+        margin: unset;
+        width: 325px;
+        padding: 0.7rem 2rem 0 2rem;
+    }
+
+    section p { letter-spacing: -0.02em }
+
+
+    section img {
+        margin-block: 1.7rem;
+        width: 23%;
+    }
 }
