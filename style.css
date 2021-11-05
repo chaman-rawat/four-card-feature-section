@@ -56,7 +56,6 @@ header {
     text-align: center;
     margin: 5rem auto;
     width: min(80%,500px);
-
 }
 
 main {
@@ -80,8 +79,6 @@ section {
 }
 section p {
     font-size: 0.85rem;
-    letter-spacing: 0.009em;
-
 }
 
 section img {
@@ -91,15 +88,15 @@ section img {
 }
 
 @media  (min-width : 800px){
-    /* header {margin-block: 5rem;} */
     h1 {
         font-size: 2.25rem;
         margin-bottom: 1rem;
         line-height: 1.4;
     }
 
-    header { margin: 5rem auto 4rem }
-    header p {font-size: 14px;}
+    header { margin: 5rem auto 4rem; }
+
+    header p { font-size: 14px; }
 
     main .container {
         max-width: fit-content;
@@ -109,7 +106,8 @@ section img {
                             "l d r"
                             ". d .";
                             gap: 2rem;
-                        }
+    }
+
     main section {
         margin: unset;
         width: 325px;
@@ -117,7 +115,6 @@ section img {
     }
 
     section p { letter-spacing: -0.02em }
-
 
     section img {
         margin-block: 1.7rem;
