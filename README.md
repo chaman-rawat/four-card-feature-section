@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [four-card-feature-section](https://four-card-feature-section.com)
+- Live Site URL: [four-card-feature-section](https://chaman-rawat.github.io/four-card-feature-section/)
 
 ## My process
 
